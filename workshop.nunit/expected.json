@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "name": "Boolean Duck",
+    "price": 100
+  },
+  {
+    "id": 2,
+    "name": "Boolean Hoodie",
+    "price": 100
+  },
+  {
+    "id": 3,
+    "name": "Boolean Mouse Mat",
+    "price": 100
+  },
+  {
+    "id": 4,
+    "name": "Boolean Coffee",
+    "price": 100
+  },
+  {
+    "id": 5,
+    "name": "Boolean Energy Drink",
+    "price": 100
+  }
+]
