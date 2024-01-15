@@ -32,10 +32,4 @@
     <ProjectReference Include="..\workshop.wwwapi\workshop.wwwapi.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <None Update="testhost.deps.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-
 </Project>
