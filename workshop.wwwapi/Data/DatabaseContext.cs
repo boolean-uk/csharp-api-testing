@@ -11,11 +11,11 @@ namespace workshop.wwwapi.Data
             var configuration = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();
             _connectionString = configuration.GetValue<string>("ConnectionStrings:DefaultConnectionString")!;
 
-            if (!this.Products.Any())
-            {
-                this.Products.AddRange(Seeder.Products);
-                this.SaveChanges();
-            }
+            //if (!this.Products.Any())
+            //{
+            //    this.Products.AddRange(Seeder.Products);
+            //    this.SaveChanges();
+            //}
 
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
