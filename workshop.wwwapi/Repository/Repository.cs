@@ -5,9 +5,16 @@ namespace workshop.wwwapi.Repository
 {
     public class Repository : IRepository
     {
+        private DatabaseContext _db;
+        public Repository(DatabaseContext db)
+        {
+            _db = db;
+        }
         public IEnumerable<Product> GetProducts()
         {
-            return DataStore.Products;
+          
+            
+            return _db.Products;
         }
     }
 }

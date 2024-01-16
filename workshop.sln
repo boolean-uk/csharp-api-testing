@@ -9,6 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "workshop.wwwapi", "workshop
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D7C8E28E-DD2B-47F2-9921-9461B93E2ABB}"
 	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
 		README.md = README.md
 	EndProjectSection
 EndProject
@@ -29,5 +30,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0AAE98D6-5BA7-43E0-84EA-4483787405DC}
 	EndGlobalSection
 EndGlobal

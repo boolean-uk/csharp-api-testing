@@ -35,7 +35,10 @@ public class ProductsTests
         var actual = JsonConvert.DeserializeObject<Product[]>(await response.Content.ReadAsStringAsync());
 
         // Assert
-        Assert.IsTrue(response.StatusCode==System.Net.HttpStatusCode.OK);
+        //Assert.IsTrue(response.StatusCode==System.Net.HttpStatusCode.OK);
+        //CollectionAssert.AreEqual(expected, actual);
+        Assert.That(actual, Is.EquivalentTo(expected));
+        //Assert.IsTrue(actual.SequenceEqual(expected));
     }
 
     public string ReadFromFile(string fileName)

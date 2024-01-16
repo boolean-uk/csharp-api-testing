@@ -1,3 +1,5 @@
+using workshop.wwwapi.Configuration;
+using workshop.wwwapi.Data;
 using workshop.wwwapi.EndPoints;
 using workshop.wwwapi.Repository;
 
@@ -9,8 +11,11 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IRepository, Repository>();
-
+builder.Services.AddScoped<IConfigurationSettings, ConfigurationSettings>();
+builder.Services.AddDbContext<DatabaseContext>();
 var app = builder.Build();
+
+var config = new ConfigurationSettings();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
